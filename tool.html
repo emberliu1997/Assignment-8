@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>How to choose A Research Method</title>
+	 <!-- jQuery -->
+    <script src="Assets/lib/jquery.js"></script>
+    <!-- handlebars -->
+    <script src="Assets/lib/handlebars-v4.0.11.js"></script>
+    <!-- custon JavaScript -->
+    <script src="Assets/main.js"></script>
+    <!-- custom CSS -->
+    <link href="Assets/style.css" rel="stylesheet">
+    <!-- isotope library -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+</head>
+<body>
+	<main>
+      <!-- Left screen -->
+ 	  <div class="box-left" id="left">
+       <div class="left-wrapper">
+	 	<!-- Header -->
+	 	<h1>How to Choose</h1>
+	 	<h2>UX Research Method</h2>
+	 	<p class = "header-text">Conducting research is often the stepping stone for product design. Choosing the correct research method can determine the success and overall design quality. It is hence essential to get the initial stage of your research right. This website would like to help you identify which method should you choose for your study.</p>
+
+        <!-- Filter buttons -->
+	 	<h4>Add Your Filters</h4>
+	 	<div id = "filter-buttons">		
+			<input type="checkbox" name="buttonGroup" value=".qualitative" id="qualitative"><label for="qualitative"><span>Qualitative</span></label>
+			<input type="checkbox" name="buttonGroup" value=".quantitative" id="quantitative"><label for="quantitative"><span>Quantitative</span></label>
+			<input type="checkbox" name="buttonGroup" value=".observing" id="observing"><label for="observing"><span>Observing</span></label>
+            <input type="checkbox" name="buttonGroup" value=".understanding" id="understanding"><label for="understanding"><span>Understanding</span></label>
+			<input type="checkbox" name="buttonGroup" value=".mapping" id="mapping"><label for="mapping"><span>Mapping</span></label>	
+			<input class="check-button" type="checkbox" name="buttonGroup" value=".testing" id="testing"><label for="testing"><span>Testing</span></label>	
+			<input type="checkbox" name="buttonGroup" value=".building" id="building"><label for="building"><span>Building</span></label>
+	    </div>
+      </div>   
+     </div>
+
+        <!-- Right screen -->
+		 <div class="box-right" id="right">        
+           <ul class="dataviz-list-container"></ul>
+		   <script id="dataviz-template" type="text/x-handlebars-template">
+		  	{{#each dataviz}}  	
+			  	  	<li class="content {{Classes}}">
+			  	  		<p class="hashtag">#{{Classes}}</p>
+			  	  		<h3>{{Name}}</h3>
+			  	  		<img class="img" src = "{{Pic}}">
+			  	  		<P class="description">{{Description}}</P>
+			  	  	</li>
+		  	 {{/each}} 
+		  	</script>	     
+		 </div>
+	</main>
+
+	<footer>
+
+		
+	</footer>
+
+</body>
+
+
+</html>

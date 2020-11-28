@@ -1,0 +1,405 @@
+/*two columns layout*/
+
+#left {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  background-color: #AEDEE2;
+  padding-left: 5%;
+}
+
+#right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: scroll;
+  width: 50%;
+  background-color: #ffffff;
+}
+
+#right::-webkit-scrollbar {
+    width: 6px;
+    background-color: #ffffff;
+} 
+
+#right::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
+#right_homepage {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  background-color: #AEDEE2;
+}
+
+/*left page content*/
+
+h1{
+  font-size: 30px;
+  font-family: helvetica Neue;
+  font-weight: bold;
+  margin-top: 155px;
+  color:#333333; 
+  text-align: left;
+}
+
+h2{
+  font-size: 74px;
+  font-family: helvetica Neue;
+  font-weight: bold;
+  margin-top: -25px;
+  color:#ffffff; 
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+h4{
+  font-size: 30px;
+  font-family: helvetica Neue;
+  font-weight: bold;
+  margin-top: 100px;
+  color:#333333; 
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.header-text{
+  font-size: 17px;
+  font-family: helvetica Neue;
+  font-weight: normal;
+  margin-top: 0px;
+  color:#333333; 
+  text-align: left;
+  width: 80%;
+  line-height: 1.2em;
+}
+
+#filter-buttons{
+  float: left;
+  width: 80%;
+}
+
+.check-button{
+  text-align: left;
+}
+
+/*Styling the checkbox so it looks like a button*/
+
+input[type="checkbox"][name="buttonGroup"] { display:none; }
+label {
+  display:inline-block;
+  border-radius:8px;
+  background-color: rgba(0,0,0,.4);  
+  font-size: 18px;
+  font-family: helvetica Neue;
+  font-weight: bolder;
+  padding: 7px 12px;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="checkbox"][name="buttonGroup"]:checked + label { 
+
+  background-color: white; 
+  color: #444444; 
+  }
+
+
+
+
+/*right page content*/
+
+
+/*homepage*/
+
+.content-right{
+  margin-top: 20%;
+  display: flex;
+  margin-left: 10%
+}
+
+.intro-img{
+    zoom:50%;  
+}
+
+.intros{
+  font-size: 19px;
+  font-family: britannic;
+  font-weight: normal;
+  color:#333333; 
+ 
+}
+
+
+#intro2{
+  margin-top: 90%;
+}
+
+#intro3{
+  margin-top: 125%;
+}
+
+#intro4{
+  margin-top: 150%;
+
+}
+
+.columns{
+   display: inline-block;
+   height: 50%;
+}
+
+#column1{
+top: 0; 
+text-align: right;
+margin-right: 20px;
+}
+
+#column2{
+  margin-right: 20px;
+ 
+}
+
+#column3{
+  top: 0;
+}
+
+#explore-button{
+  margin-top: 20px;
+  border-radius:8px;
+  background-color: rgba(0,0,0,.4);  
+  font-size: 18px;
+  font-family: helvetica Neue;
+  font-weight: bolder;
+  padding: 10px 17px;
+  color: white;
+  border:none;
+}
+
+#explore-button:hover{
+
+ background-color: white; 
+  color: #444444; 
+}
+
+/*second page*/
+
+.dataviz-list-container{
+  list-style: none;
+  padding: 0;
+  padding-left: 7%;
+  width: 75%;  
+}
+
+#dataviz-template{
+  width: 75%;
+}
+
+.dataviz-list-container.isotope{
+  overflow: visible !important;
+}
+
+.hashtag{
+  text-align: left;
+  font-family: helvetica Neue;
+  font-size: 17px;
+  font-weight: normal;
+  color: #999999;
+}
+
+h3{
+  text-align: left;
+  font-size: 23px;
+  font-family: helvetica Neue;
+  font-weight: bold;
+  color:#333333; 
+  margin-bottom: 3%;
+}
+
+
+.content{
+  border-bottom: 1px solid #D8D8D8;
+}
+
+.img{
+   height: 30%;
+   width: 30%;
+   margin-bottom: 15px;
+}
+
+.description{
+  padding-bottom: 70px;
+  font-family: helvetica Neue;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.2em;
+}
+
+
+
+/**** Isotope styling ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+
+
+
+
+/**** Responsive styling ****/
+
+/* Tablet */
+
+
+@media screen and (max-width: 900px){
+  #left {
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70vh;
+    margin: 0px;
+    padding: 0px;
+  
+  }
+  
+  #right {
+    top:70vh;
+    bottom: 0;
+    right: 0;
+    overflow-y: visible;
+    width: 100%;   
+  }
+  
+  #right_homepage{
+    top:40vh;
+    bottom: 0;
+    right: 0;
+    width: 100%;   
+  }
+
+  .left-wrapper{
+    margin-left: 8%;
+  }
+
+  h1{
+  font-size: 23px;
+  margin-top: 10%;
+  }
+
+
+  h2{
+    font-size: 49px;
+    margin-top: -10px;
+    color:#ffffff; 
+    text-align: left;
+  }
+
+  h4{
+    font-size: 23px;
+    margin-top: 100px;
+    margin-bottom: 5px;
+  }
+
+  .header-text{
+    font-size: 17px;
+    margin-top: 0px;
+  }
+
+
+}
+
+
+
+/* Mobile */
+
+@media screen and (max-width: 600px){
+  #left {
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70vh;
+    margin: 0px;
+    padding: 0px;
+  
+  }
+  
+  #right {
+    top:70vh;
+    bottom: 0;
+    right: 0;
+    overflow-y: visible;
+    width: 100%;   
+  }
+
+  #right_homepage{
+    top:40vh;
+    bottom: 0;
+    right: 0;
+    overflow-y: visible;
+    width: 100%;  
+
+  }
+
+  .left-wrapper{
+    margin-left: 8%;
+  }
+
+  h1{
+  font-size: 20px;
+  margin-top: 10%;
+  }
+
+
+  h2{
+    font-size: 40px;
+    margin-top: -10px;
+    color:#ffffff; 
+    text-align: left;
+  }
+
+  h4{
+    font-size: 20px;
+    margin-top: 70px;
+    margin-bottom: 5px;
+  }
+
+  .header-text{
+    font-size: 17px;
+    margin-top: 0px;
+    width: 90%;
+  }
+
+
+  input[type="checkbox"][name="buttonGroup"] { display:none; }
+  label {
+
+    padding: 5px 9px;
+
+  }
+
+}
+
+
+
